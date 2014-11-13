@@ -1,0 +1,13 @@
+drop table if exists YearTagData;
+
+create table YearTagData(year int,
+tag varchar(25),
+tempo double,
+instances int, 
+hottness double, 
+loudness double, 
+duration double, 
+danceability double, 
+energy double,
+primary key(year,tag)
+);
