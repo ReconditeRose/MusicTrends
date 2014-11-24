@@ -1,0 +1,74 @@
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="">
+  <meta name="author" content="">
+  <link rel="icon" href="/favicon.ico">
+  <title>Most Common Title Words</title>
+
+  <!-- Bootstrap core CSS -->
+  <link href="css/bootstrap.min.css" rel="stylesheet">
+  <!-- Bootstrap theme -->
+  <link href="css/bootstrap-theme.min.css" rel="stylesheet">
+  <link href="css/jquery-ui.css" rel="stylesheet" type="text/css"/>
+  <link href="css/custom_css.css" rel="stylesheet" type="text/css"/>
+
+  <script src="js/jquery.min.js"></script>
+  <script src="js/jquery-ui.min.js"></script>
+
+  <script type="text/javascript" src="https://www.google.com/jsapi"></script>
+  <script src="js/topWords.js"></script>
+</head>
+
+<body role="document">
+  <!-- Fixed navbar -->
+  <div class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+    <div class="container">
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target=".navbar-collapse">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand" href="/">Music Trends</a>
+      </div>
+      <div class="navbar-collapse collapse">
+        <ul class="nav navbar-nav">
+          <li><a href="trends.html">Trends</a></li>
+          <li><a href="correlations.html">Correlations</a></li>
+          <li><a href="topArtists.html">Top Artists</a></li>
+          <li class="active"><a href="topWords.html">Top Words</a></li>
+          <li><a href="Context.html">Context</a></li>
+        </li>
+      </ul>
+    </div>
+  </div>
+</div>
+
+
+<div class="container" role="main">
+
+  <div class="jumbotron">
+    <h1>Title Word Count</h1>
+    A listing of the top 100 most frequently found words in song titles.
+  </div>
+
+  <div class="panel panel-info">
+    <div class="panel-heading"><h3 class="panel-title">The most common words found in song titles</h3></div>
+    <h3 class="panel-body">
+      <table class="table table-striped" id="wordTable">
+        <tr><th>Rank</th><th>Word</th><th>Instances of the Word</th></tr>
+
+      </table>
+    </h3>
+  </div>
+
+
+</div>
+<script src="js/bootstrap.min.js"></script>
+</body>
+
+</html>

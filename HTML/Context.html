@@ -1,0 +1,89 @@
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="description" content="">
+	<meta name="author" content="">
+	<link rel="icon" href="/favicon.ico">
+
+	<title>Music Trends</title>
+
+	<!-- Bootstrap core CSS -->
+	<link href="css/bootstrap.min.css" rel="stylesheet">
+	<!-- Bootstrap theme -->
+	<link href="css/bootstrap-theme.min.css" rel="stylesheet">
+	<link href="css/jquery-ui.css" rel="stylesheet" type="text/css"/>
+	<link href="css/custom_css.css" rel="stylesheet" type="text/css"/>
+
+	<script src="js/jquery.min.js"></script>
+	<script src="js/jquery-ui.min.js"></script>
+
+	<script type="text/javascript" src="https://www.google.com/jsapi"></script>
+
+</head>
+
+<body role="document">
+	<div class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+		<div class="container">
+			<div class="navbar-header">
+				<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target=".navbar-collapse">
+					<span class="sr-only">Toggle navigation</span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+				</button>
+				<a class="navbar-brand" href="/">Music Trends</a>
+			</div>
+			<div class="navbar-collapse collapse">
+				<ul class="nav navbar-nav">
+					<li><a href="trends.html">Trends</a></li>
+					<li><a href="correlations.html">Correlations</a></li>
+					<li><a href="topArtists.html">Top Artists</a></li>
+					<li><a href="topWords.html">Top Words</a></li>
+					<li class="active"><a href="Context.html">Context</a></li>
+				</li>
+			</ul>
+		</div><!--/.nav-collapse -->
+	</div>
+</div>
+
+
+<div class="container" role="main">
+
+	<div class="jumbotron">
+		<h1>More information!</h1>
+			Hopefully this page can clear up some of the questions you may have about this site. : )
+	</div>
+
+
+<div class="panel panel-info">
+	<div class="panel-heading"><h3 class="panel-title">Dataset</h3></div>
+	<div class="panel-body">The dataset that we were mining originated from the million song dataset.  For more information you can check it out here:<a href="http://labrosa.ee.columbia.edu/millionsong/">http://labrosa.ee.columbia.edu/millionsong/</a></div>
+</div>
+
+<div class="panel panel-info">
+	<div class="panel-heading"><h3 class="panel-title">Trends</h3></div>
+	<h3 class="panel-body">Based on the information from the dataset, we identified 5 trends we were gonna look at:
+		<table>
+			<tr><td>Hotness</td><td>A measure of how hot the song was on the charts at the time of analysis</td></tr>
+			<tr><td>Duration</td><td>How long a song is, in seconds</td></tr>
+			<tr><td>Loudness</td><td>The Decibel measurement of how loud the song was</td></tr>
+			<tr><td>Tempo</td><td>A measure of the tempo of the song</td></tr>
+			<tr><td>Pitch</td><td>Which semitone the song averaged out in, value between [0,12)</td></tr>
+	</table>
+	</h3>
+</div>
+
+<div class="panel panel-info">
+	<div class="panel-heading"><h3 class="panel-title">Source Code</h3></div>
+	<div class="panel-body">The data analysis was done a 3 node cluster provided by our CSSE department, all the code can be found at the following github page: <a href="https://github.com/wiizeldaguy/MusicTrends">Music Trends</a> </div>
+</div>
+
+</div> <!-- /container -->
+
+
+<script src="js/bootstrap.min.js"></script>
+</body>
+
+</html>
